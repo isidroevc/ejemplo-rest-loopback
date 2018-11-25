@@ -1,0 +1,37 @@
+{
+  "name": "Contacto",
+  "plural": "contactos",
+  "base": "PersistedModel",
+  "strict": true,
+  "mysql": {
+    "schema": "contactos",
+    "table": "contactos"
+  },
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "Number",
+      "id": true,
+      "dataType": "int"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
